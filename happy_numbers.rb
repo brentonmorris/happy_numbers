@@ -1,6 +1,5 @@
 def calculate_happiness(number, curr_count)
   result = number.to_s.split("")
-
   curr_val = result.map { |digit| digit.to_i ** 2 }.reduce(:+)
 
   if curr_count == 8
